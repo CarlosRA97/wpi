@@ -38,7 +38,7 @@ const (
 	PIN_CE0     = iota
 	PIN_CE1     = iota
 	PIN_MOSI    = iota
-	PIN_MOSO    = iota
+	PIN_MISO    = iota
 	PIN_SCLK    = iota
 	PIN_TXD     = iota
 	PIN_RXD     = iota
