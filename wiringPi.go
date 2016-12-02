@@ -84,33 +84,10 @@ const (
 	INT_EDGE_BOTH    = iota // C.INT_EDGE_BOTH
 )
 
-// Pi model types and version numbers
-//      Intended for GPIO program Use at your own risk
-
-const (
-	PI_MODEL_A    = iota
-	PI_MODEL_B    = iota
-	PI_MODEL_AP   = iota
-	PI_MODEL_BP   = iota
-	PI_MODEL_2    = iota
-	PI_ALPHA      = iota
-	PI_MODEL_CM   = iota
-	PI_MODEL_07   = iota
-	PI_MODEL_3    = iota
-	PI_MODEL_ZERO = iota
-)
-const (
-	PI_VERSION_1   = iota
-	PI_VERSION_1_1 = iota
-	PI_VERSION_1_2 = iota
-	PI_VERSION_2   = iota
-)
-const (
-	PI_MAKER_SONY    = iota
-	PI_MAKER_EGOMAN  = iota
-	PI_MAKER_MBEST   = iota
-	PI_MAKER_UNKNOWN = iota
-)
+// Conversion from wiringPi numeration to GPIO
+func PinToGpio(pin int) int {
+	return int(C.wpiPinToGpio(C.int(pin)))
+}
 
 // Core wiringPi functions
 

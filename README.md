@@ -24,6 +24,8 @@ gpio -v
 echo "Downloading wiringPi-Go"
 go get -d github.com/CarlosRA97/wpi
 
+echo "Finished! Let's program Raspberry Pi with Go"
+
 EOF1
 
 chmod 755 installwpi.sh
