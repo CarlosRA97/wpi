@@ -1,7 +1,5 @@
 package wpi
 
-//-L"/home/pi/wiringPi/wiringPi"
-
 /*
 
 #cgo LDFLAGS: -lwiringPi
@@ -23,6 +21,31 @@ const (
 	WPI_MODE_PHYS          = iota // C.WPI_MODE_PHYS
 	WPI_MODE_PIFACE        = iota // C.WPI_MODE_PIFACE
 	WPI_MODE_UNINITIALISED = -1   // C.WPI_MODE_UNINITIALISED
+)
+
+// Pins (pin naming = wiringPi numeration)
+const (
+	PIN_GPIO_0  = iota // 0
+	PIN_GPIO_1  = iota
+	PIN_GPIO_2  = iota
+	PIN_GPIO_3  = iota
+	PIN_GPIO_4  = iota
+	PIN_GPIO_5  = iota
+	PIN_GPIO_6  = iota
+	PIN_GPIO_7  = iota
+	PIN_SDA     = iota
+	PIN_SCL     = iota
+	PIN_CE0     = iota
+	PIN_CE1     = iota
+	PIN_MOSI    = iota
+	PIN_MOSO    = iota
+	PIN_SCLK    = iota
+	PIN_TXD     = iota
+	PIN_RXD     = iota
+	PIN_GPIO_8  = iota
+	PIN_GPIO_9  = iota
+	PIN_GPIO_10 = iota
+	PIN_GPIO_11 = iota
 )
 
 // Pin modes
