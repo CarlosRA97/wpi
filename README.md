@@ -7,14 +7,30 @@ Golang wrapped version of Gordon's Arduino-like WiringPi for the Raspberry Pi
 
 install WiringPi first
 
-```
+Copy/paste this to your terminal to install wiringPi and wiringPi-Go
+
+```bash
+cat <<'EOF1' > installwpi.sh
+
+echo "Donwloading and building wiringPi"
 git clone git://git.drogon.net/wiringPi
 
+cd wiringPi
+git pull origin
+./build
 
-cd WiringPi\wiringPi
-sudo make install
+gpio -v
 
-go get github.com/hugozhu/rpi
+echo "Downloading wiringPi-Go"
+go get -d github.com/CarlosRA97/wpi
+
+EOF1
+
+chmod 755 installwpi.sh
+```
+
+```bash
+./installwpi.sh
 ```
 
 # GPIO numbering
