@@ -4,7 +4,7 @@ package wpi
 
 #cgo LDFLAGS: -lwiringPi
 #include <wiringPi.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 */
 import "C"
