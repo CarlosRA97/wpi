@@ -9,15 +9,24 @@ package wpi
 */
 import "C"
 import (
+	"errors"
+	"fmt"
 	"unsafe"
 )
 
 type Serial int
 
-func Open(device string, baud int) *Serial {
+const _nil = -1
+
+func Open(device string, baud int) (*Serial, error) {
 	dev := C.CString(device)
 	defer C.free(unsafe.Pointer(dev))
-	return *int(C.serialOpen(dev, C.int(baud)))
+	serial := *Serial(C.serialOpen(dev, C.int(baud)))
+	if serial != _nil {
+		return *Serial(C.serialOpen(dev, C.int(baud))), nil
+	} else {
+		return nil, errors.New(fmt.Sprintf("Unable to open serial device: %s", device))
+	}
 }
 func (s *Serial) Close() {
 	C.serialClose(C.int(s))
