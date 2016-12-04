@@ -6,6 +6,10 @@ package wpi
 #include <wiringSerial.h>
 #include <stdlib.h>
 
+void _serialPrintf(int fd, char* message) {
+	serialPrintf(fd, message)
+}
+
 */
 import "C"
 import (
@@ -47,7 +51,7 @@ func (s *Serial) Puts(ss string) {
 func (s *Serial) Printf(message string) {
 	_message := C.CString(message)
 	defer C.free(unsafe.Pointer(_message))
-	C.serialPrintf(C.int(s), _message)
+	C._serialPrintf(C.int(s), _message)
 }
 func (s *Serial) DataAvail() int {
 	return int(C.serialDataAvail(C.int(s)))
