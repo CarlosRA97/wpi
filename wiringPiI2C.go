@@ -38,8 +38,8 @@ func (i2c I2C) Write(data int) int {
 	return int(C.wiringPiI2CWrite(C.int(i2c), C.int(data)))
 }
 func (i2c I2C) WriteReg8(reg, data int) int {
-	return int(C.wiringPiI2CWriteReg8(C.int(i2c), C.int(data)))
+	return int(C.wiringPiI2CWriteReg8(C.int(i2c), C.int(reg), C.int(data)))
 }
 func (i2c I2C) WriteReg16(reg, data int) int {
-	return int(C.wiringPiI2CWriteReg16(C.int(i2c), C.int(data)))
+	return int(C.wiringPiI2CWriteReg16(C.int(i2c), C.int(reg), C.int(data)))
 }

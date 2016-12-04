@@ -20,7 +20,7 @@ func (wpiSPI *WiringPiSPI) GetFd() int {
 
 // TODO: Check this function pls, may have some problems with C pointers
 func (wpiSPI *WiringPiSPI) DataRW(data string, len int) int {
-	_data := C.CString(data)
+	_data := *C.uchar(data)
 	defer C.free(unsafe.Pointer(_data))
 	return int(C.wiringPiSPIDataRW(C.int(wpiSPI.channel), _data, C.int(len)))
 }
