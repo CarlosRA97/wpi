@@ -13,7 +13,7 @@ import "unsafe"
 type I2C int
 
 func I2CSetupInterface(device string, devID int) *I2C {
-	var _new *int
+	var _new *I2C
 	dev := C.CString(device)
 	defer C.free(unsafe.Pointer(dev))
 	_new = *int(C.wiringPiI2CSetupInterface(dev, C.int(devID)))

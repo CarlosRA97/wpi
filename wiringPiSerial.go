@@ -8,7 +8,9 @@ package wpi
 
 */
 import "C"
-import "unsafe"
+import (
+	"unsafe"
+)
 
 type Serial int
 
