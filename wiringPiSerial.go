@@ -33,7 +33,7 @@ func (s *Serial) Puts(ss string) {
 	defer C.free(unsafe.Pointer(_s))
 	C.serialPuts(C.int(s))
 }
-func (s *Serial) Printf(message ...string) {
+func (s *Serial) Printf(message string) {
 	_message := C.CString(message)
 	defer C.free(unsafe.Pointer(_message))
 	C.serialPrintf(_message)
