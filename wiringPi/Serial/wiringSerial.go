@@ -10,7 +10,7 @@
 
 // source: wiringSerial.h
 
-package wiringPi
+package Serial
 
 import "unsafe"
 import _ "runtime/cgo"

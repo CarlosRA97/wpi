@@ -10,7 +10,7 @@
 
 // source: wiringPiSPI.h
 
-package wiringPi
+package SPI
 
 import "unsafe"
 import _ "runtime/cgo"

@@ -10,7 +10,7 @@
 
 // source: wiringPiI2C.h
 
-package wiringPi
+package I2C
 
 import "unsafe"
 import _ "runtime/cgo"
