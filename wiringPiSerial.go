@@ -27,9 +27,9 @@ func Open(device string, baud int) (Serial, error) {
 	defer C.free(unsafe.Pointer(dev))
 	serial := int(C.serialOpen(dev, C.int(baud)))
 	if serial != _nil {
-		return int(C.serialOpen(dev, C.int(baud))), nil
+		return Serial(C.serialOpen(dev, C.int(baud))), nil
 	} else {
-		return nil, errors.New(fmt.Sprintf("Unable to open serial device: %s", device))
+		return _nil, errors.New(fmt.Sprintf("Unable to open serial device: %s", device))
 	}
 }
 func (s Serial) Close() {
