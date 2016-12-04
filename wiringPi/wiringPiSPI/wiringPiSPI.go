@@ -10,7 +10,7 @@
 
 // source: wiringPiSPI.h
 
-package SPI
+package wiringPiSPI
 
 import "unsafe"
 import _ "runtime/cgo"
@@ -28,11 +28,11 @@ type _swig_memberptr *byte
 
 type _ sync.Mutex
 
-var _wrap_Swig_free_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_Swig_free_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func _swig_wrap_Swig_free(base uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_Swig_free_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_free_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 
@@ -40,43 +40,43 @@ func Swig_free(arg1 uintptr) {
 	_swig_wrap_Swig_free(arg1)
 }
 
-var _wrap_Swig_malloc_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_Swig_malloc_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 
-var _wrap_wiringPiSPIGetFd_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_wiringPiSPIGetFd_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func WiringPiSPIGetFd(arg1 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiSPIGetFd_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiSPIGetFd_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 
-var _wrap_wiringPiSPIDataRW_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_wiringPiSPIDataRW_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func WiringPiSPIDataRW(arg1 int, arg2 *byte, arg3 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiSPIDataRW_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiSPIDataRW_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 
-var _wrap_wiringPiSPISetupMode_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_wiringPiSPISetupMode_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func WiringPiSPISetupMode(arg1 int, arg2 int, arg3 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiSPISetupMode_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiSPISetupMode_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 
-var _wrap_wiringPiSPISetup_wiringPi_52ff6496c3824ae5 unsafe.Pointer
+var _wrap_wiringPiSPISetup_wiringPiSPI_52ff6496c3824ae5 unsafe.Pointer
 
 func WiringPiSPISetup(arg1 int, arg2 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiSPISetup_wiringPi_52ff6496c3824ae5, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiSPISetup_wiringPiSPI_52ff6496c3824ae5, _swig_p)
 	return
 }
 

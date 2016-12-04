@@ -10,7 +10,7 @@
 
 // source: wiringSerial.h
 
-package Serial
+package wiringSerial
 
 import "unsafe"
 import _ "runtime/cgo"
@@ -28,11 +28,11 @@ type _swig_memberptr *byte
 
 type _ sync.Mutex
 
-var _wrap_Swig_free_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_Swig_free_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_Swig_free(base uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_Swig_free_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_free_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -40,19 +40,19 @@ func Swig_free(arg1 uintptr) {
 	_swig_wrap_Swig_free(arg1)
 }
 
-var _wrap_Swig_malloc_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_Swig_malloc_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
-var _wrap_serialOpen_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialOpen_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialOpen(base string, _ int) (_ int) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialOpen_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialOpen_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -63,11 +63,11 @@ func SerialOpen(arg1 string, arg2 int) (_swig_ret int) {
 	return _swig_wrap_serialOpen(arg1, arg2)
 }
 
-var _wrap_serialClose_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialClose_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialClose(base int) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialClose_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialClose_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -75,11 +75,11 @@ func SerialClose(arg1 int) {
 	_swig_wrap_serialClose(arg1)
 }
 
-var _wrap_serialFlush_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialFlush_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialFlush(base int) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialFlush_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialFlush_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -87,11 +87,11 @@ func SerialFlush(arg1 int) {
 	_swig_wrap_serialFlush(arg1)
 }
 
-var _wrap_serialPutchar_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialPutchar_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialPutchar(base int, _ byte) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialPutchar_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialPutchar_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -99,11 +99,11 @@ func SerialPutchar(arg1 int, arg2 byte) {
 	_swig_wrap_serialPutchar(arg1, arg2)
 }
 
-var _wrap_serialPuts_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialPuts_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialPuts(base int, _ string) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialPuts_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialPuts_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -114,11 +114,11 @@ func SerialPuts(arg1 int, arg2 string) {
 	_swig_wrap_serialPuts(arg1, arg2)
 }
 
-var _wrap_serialPrintf_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialPrintf_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func _swig_wrap_serialPrintf(base int, _ string) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_serialPrintf_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialPrintf_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
@@ -129,19 +129,19 @@ func SerialPrintf(arg1 int, arg2 string) {
 	_swig_wrap_serialPrintf(arg1, arg2)
 }
 
-var _wrap_serialDataAvail_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialDataAvail_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func SerialDataAvail(arg1 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_serialDataAvail_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialDataAvail_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 
-var _wrap_serialGetchar_wiringPi_b19d29195d13eb84 unsafe.Pointer
+var _wrap_serialGetchar_wiringSerial_b19d29195d13eb84 unsafe.Pointer
 
 func SerialGetchar(arg1 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_serialGetchar_wiringPi_b19d29195d13eb84, _swig_p)
+	_cgo_runtime_cgocall(_wrap_serialGetchar_wiringSerial_b19d29195d13eb84, _swig_p)
 	return
 }
 

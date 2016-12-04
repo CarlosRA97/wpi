@@ -10,7 +10,7 @@
 
 // source: wiringPiI2C.h
 
-package I2C
+package wiringPiI2C
 
 import "unsafe"
 import _ "runtime/cgo"
@@ -28,11 +28,11 @@ type _swig_memberptr *byte
 
 type _ sync.Mutex
 
-var _wrap_Swig_free_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_Swig_free_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func _swig_wrap_Swig_free(base uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_Swig_free_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_free_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
@@ -40,67 +40,67 @@ func Swig_free(arg1 uintptr) {
 	_swig_wrap_Swig_free(arg1)
 }
 
-var _wrap_Swig_malloc_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_Swig_malloc_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_Swig_malloc_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CRead_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CRead_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CRead(arg1 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CRead_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CRead_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CReadReg8_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CReadReg8_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CReadReg8(arg1 int, arg2 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CReadReg8_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CReadReg8_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CReadReg16_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CReadReg16_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CReadReg16(arg1 int, arg2 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CReadReg16_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CReadReg16_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CWrite_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CWrite_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CWrite(arg1 int, arg2 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CWrite_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CWrite_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CWriteReg8_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CWriteReg8_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CWriteReg8(arg1 int, arg2 int, arg3 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CWriteReg8_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CWriteReg8_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CWriteReg16_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CWriteReg16_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CWriteReg16(arg1 int, arg2 int, arg3 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CWriteReg16_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CWriteReg16_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
-var _wrap_wiringPiI2CSetupInterface_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CSetupInterface_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func _swig_wrap_wiringPiI2CSetupInterface(base string, _ int) (_ int) {
 	_swig_p := uintptr(unsafe.Pointer(&base))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CSetupInterface_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CSetupInterface_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
@@ -111,11 +111,11 @@ func WiringPiI2CSetupInterface(arg1 string, arg2 int) (_swig_ret int) {
 	return _swig_wrap_wiringPiI2CSetupInterface(arg1, arg2)
 }
 
-var _wrap_wiringPiI2CSetup_wiringPi_f2ed42202b4595ef unsafe.Pointer
+var _wrap_wiringPiI2CSetup_wiringPiI2C_f2ed42202b4595ef unsafe.Pointer
 
 func WiringPiI2CSetup(arg1 int) (_swig_ret int) {
 	_swig_p := uintptr(unsafe.Pointer(&arg1))
-	_cgo_runtime_cgocall(_wrap_wiringPiI2CSetup_wiringPi_f2ed42202b4595ef, _swig_p)
+	_cgo_runtime_cgocall(_wrap_wiringPiI2CSetup_wiringPiI2C_f2ed42202b4595ef, _swig_p)
 	return
 }
 
