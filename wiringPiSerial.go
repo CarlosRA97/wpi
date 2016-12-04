@@ -3,7 +3,7 @@ package wpi
 /*
 
 #cgo LDFLAGS: -lwiringPi
-#include <wiringPiSerial.h>
+#include <wiringSerial.h>
 #include <stdlib.h>
 
 */
