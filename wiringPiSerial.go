@@ -38,7 +38,7 @@ func (s *Serial) Puts(ss string) {
 func (s *Serial) Printf(message string) {
 	_message := C.CString(message)
 	defer C.free(unsafe.Pointer(_message))
-	C.serialPrintf(_message)
+	C.serialPrintf(C.int(s), _message)
 }
 func (s *Serial) DataAvail() int {
 	return int(C.serialDataAvail(C.int(s)))
