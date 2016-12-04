@@ -7,7 +7,7 @@ package wpi
 #include <stdlib.h>
 
 void _serialPrintf(int fd, char* message) {
-	serialPrintf(fd, message)
+	serialPrintf(fd, message);
 }
 
 */
